@@ -29,7 +29,7 @@ class DVD(BaseModel):
 
 while True:
     try:
-        conn = psycopg2.connect(host='localhost',database='dvdshop',user='postgres' ,password ='postword1', cursor_factory=RealDictCursor)
+        conn = psycopg2.connect(host='postgres',database='dvdshop',user='postgres' ,password ='postword1', cursor_factory=RealDictCursor)
         cursor = conn.cursor()
         print("Connected to database succesfully!")
         break
